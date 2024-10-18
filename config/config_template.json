@@ -1,5 +1,0 @@
-{
-    "site_name": "Your_Site_Name",
-    "tables_path": "/path/to/tables/",
-    "file_type": "csv/parquet/fst"
-}
