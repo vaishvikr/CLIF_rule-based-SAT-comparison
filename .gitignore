@@ -10,7 +10,7 @@ CLIF_*.parquet
 CLIF_*.csv
 CLIF_*.fst
 *.csv
-*.ipynb
+
 # ignore filtered CLIF tables stored as Rdata
 *.RData
 
