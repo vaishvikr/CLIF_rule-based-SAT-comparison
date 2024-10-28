@@ -40,7 +40,7 @@ source .satsbt/bin/activate
 pip install -r requirements.txt
 
 if Windows:
-python3 -m venv .satsbt_ATS24
+python -m venv .satsbt_ATS24
 call .satsbt_ATS24\Scripts\activate.bat
 pip install -r requirements.txt
 ```

@@ -6,3 +6,4 @@ duckdb
 jupyter
 ipykernel
 tqdm
+tableone
