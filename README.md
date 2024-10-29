@@ -17,7 +17,8 @@ The following tables are required:
 3. **medication_admin_continuous**: `hospitalization_id`, `admin_dttm`, `med_category`, `med_dose`
    - `med_category` = 'fentanyl', 'propofol', 'lorazepam', 'midazolam','hydromorphone','morphine'
 4. **respiratory_support**: `hospitalization_id`, `recorded_dttm`, `device_category`
-5. **patient_assessments**: `hospitalization_id`, `recorded_dttm`, `assessment_category`,`numerical_value`, `categorical_value` -`assessment_category` = 'rass', 'sat_delivery_pass_fail','sat_screen_pass_fail'
+5. **patient_assessments**: `hospitalization_id`, `recorded_dttm`, `assessment_category`,`numerical_value`, `categorical_value`
+   - `assessment_category` = 'rass', 'sat_delivery_pass_fail','sat_screen_pass_fail'
 
 ## Cohort identification
 
