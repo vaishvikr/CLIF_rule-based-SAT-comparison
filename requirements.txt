@@ -7,3 +7,4 @@ jupyter
 ipykernel
 tqdm
 tableone
+joblib
