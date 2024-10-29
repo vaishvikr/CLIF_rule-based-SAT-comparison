@@ -1,8 +1,8 @@
-# CLIF Project Title
+# CLIF Rule based SAT comparison
 
 ## Objective
 
-Describe the project objective
+The aim of this project is to evaluate compliance in the delivery of Spontaneous Awakening Trials (SAT) within healthcare settings. We have developed an algorithm that detects SAT events in Electronic Health Records (EHR) by identifying specific signatures. This algorithm allows for comparison of SAT occurrences with documented flowsheets to assess adherence to the SAT protocol.
 
 ## Required CLIF tables and fields
 
@@ -17,15 +17,18 @@ The following tables are required:
 3. **medication_admin_continuous**: `hospitalization_id`, `admin_dttm`, `med_category`, `med_dose`
    - `med_category` = 'fentanyl', 'propofol', 'lorazepam', 'midazolam','hydromorphone','morphine'
 4. **respiratory_support**: `hospitalization_id`, `recorded_dttm`, `device_category`
-5. **patient_assessments**: `hospitalization_id`, `recorded_dttm`, `assessment_category`,`numerical_value`, `categorical_value`
+5. **patient_assessments**: `hospitalization_id`, `recorded_dttm`, `assessment_category`,`numerical_value`, `categorical_value` -`assessment_category` = 'rass', 'sat_delivery_pass_fail','sat_screen_pass_fail'
 
 ## Cohort identification
 
-Describe study cohort inclusion and exclusion criteria here
+Study period: January 1, 2020 to December 31, 2021 (2 years) Inclusion criteria:
+
+Patients with at least one ICU admission & IMV during the study period (2020-2021)
+Age >= 18 years at the time of initial hospital admission
 
 ## Expected Results
 
-Describe the output of the analysis. The final project results should be saved in the [`output/final`](output/README.md) directory.
+Output: One table1 file and One stats file [`output/final`](../output/README.md)
 
 ## Detailed Instructions for running the project
 
