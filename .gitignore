@@ -22,6 +22,6 @@ CLIF_*.fst
 
 # env 
 .satsbt_ATS24
-
+.satsbt
 #dev nb
 temp.ipynb

@@ -48,8 +48,14 @@ def deftime(df):
     print(f"Count with hours and minutes: {count_with_hr_min}")
     print(f"Count without hours and minutes: {count_without_hr_min}")
 
-def getdttm(df):
-    return pd.to_datetime(df).dt.ceil('min')
+def getdttm(df,cutby='min'):
+    '''
+    Convert dttm to the required format, make tz naive and ceil to minute
+    '''
+    dt_series = pd.to_datetime(df, errors='coerce', format='%Y-%m-%d %H:%M:%S').dt.tz_localize(None)
+    if cutby=='min':
+        dt_series = dt_series.dt.ceil('min')
+    return dt_series
 
 helper = load_config()
 print(helper)
